@@ -6,6 +6,11 @@
   <target name="resolve-ivy-deps" description="Fetch dependencies with Ivy">
     <ivy:retrieve />
   </target>
+  <target name="clean" description="Delete all binaries">
+    <delete dir="bin" />
+    <delete dir="build" />
+    <delete dir="dist" />
+  </target>
 
   <!-- From WPILib -->
   <property file="${user.home}/wpilib/wpilib.properties"/>
