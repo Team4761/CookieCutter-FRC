@@ -17,11 +17,6 @@ tmp/
 /.idea
 .classpath
 
-# Toast/GradleRIO
-run/
-.gradle/
-gradle/.launch/
-
 # OS Files
 .DS_Store
 .DS_Store?
@@ -33,3 +28,5 @@ gradle/.launch/
 ehthumbs.db
 Thumbs.db
 
+# Ivy
+lib/
