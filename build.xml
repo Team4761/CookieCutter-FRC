@@ -11,26 +11,6 @@
     <delete dir="build" />
     <delete dir="dist" />
   </target>
-  <target name="wpilib-for-ci">
-    <echo file="${user.home}/wpilib.properties">version=current${line.separator}team-number=4761</echo>
-    <get src="https://gist.githubusercontent.com/simon-andrews/0127707da461e543cb76/raw/dl_wpilibjars.py" dest="dl_wpilibjars.py" />
-    <!-- ¯\_(ツ)_/¯ -->
-    <exec executable="python3">
-      <arg value="dl_wpilibjars.py" />
-      <arg value="--members" />
-      <arg value="ant/ant-classloadertask.jar" />
-      <arg value="ant/ant-contrib.jar" />
-      <arg value="ant/build.properties" />
-      <arg value="ant/build.xml" />
-      <arg value="ant/frcdebug" />
-      <arg value="ant/jsch-0.1.50.jar" />
-      <arg value="ant/robotCommand" />
-      <arg value="ant/robotDebugCommand" />
-      <arg value="--dest" />
-      <arg value="${user.home}/wpilib/java/current" />
-    </exec>
-    <delete file="dl_wpilibjars.py" />
-  </target>
 
   <!-- From WPILib -->
   <property file="${user.home}/wpilib/wpilib.properties"/>
