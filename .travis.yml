@@ -1,0 +1,24 @@
+language: java
+
+install:
+  - mkdir -p ~/.ant/lib && ln -s -T /usr/share/java/ivy.jar ~/.ant/lib/ivy.jar
+  - ant wpilib-for-ci
+
+script:
+  - ant resolve-ivy-deps
+  - ant jar
+
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk7
+
+addons:
+  apt:
+    packages:
+      - python3
+
+matrix:
+  allow_failures:
+    - jdk: oraclejdk7
+    - jdk: openjdk7
