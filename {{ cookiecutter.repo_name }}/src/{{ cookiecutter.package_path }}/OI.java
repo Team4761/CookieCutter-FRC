@@ -1,7 +1,7 @@
-package org.robockets.cookiecutter;
+package {{ cookiecutter.package_name }};
 
 import edu.wpi.first.wpilibj.buttons.Button;
-import org.robockets.cookiecutter.commands.ExampleCommand;
+import {{ cookiecutter.package_name }}.commands.ExampleCommand;
 
 /**
  * This class is the glue that binds the controls on the physical operator

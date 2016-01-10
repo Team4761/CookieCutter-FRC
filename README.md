@@ -1,5 +1,5 @@
 # CookieCutter-FRC
-Cookiecutter project for FRC robot projects with Ivy. Some 4761-specific stuff is hardcoded into the project but if you fork it for your own team it should be pretty easy to customize.
+Cookiecutter project for Command-Based Java FRC robot projects with Ivy.
 
 ## Fancy Features
 * Dependency management with [Apache Ivy](https://ant.apache.org/ivy/).
@@ -9,10 +9,13 @@ Cookiecutter project for FRC robot projects with Ivy. Some 4761-specific stuff i
 * .gitignore file based of the one from the [Open-RIO project](https://github.com/Open-RIO/.gitignore).
 * "Clean" task for the Ant build file for quickly and easily removing binaries.
 
-## Getting set up
-1. **Clone the project.** Use [roboclone](http://simon-andrews.github.io/roboclone/).
-2. **Remove the origin.** You can do this with the command `git remote rm origin`.
-3. **Add the origin for your project.** You can do this with the command `git remote add origin <ORIGIN_URL>`.
-4. **Refactor the package name to change it to your desired package name.**
-5. **Edit ivy.xml to reflect the refactor.** Change the info element to whatever your new package name is.
-6. **Add a README file.** Please.
+## Generating a project
+1. Install [Python](https://www.python.org/downloads/)
+2. Install [Cookiecutter](https://cookiecutter.readthedocs.org/en/latest/installation.html)
+3. Run `cookiecutter gh:Team4761/Cookiecutter-FRC`
+4. Answer the prompts that appear on your screen
+
+## Using generated projects
+1. Make sure you have Ant in your system path
+2. Install [Apache Ivy](https://ant.apache.org/ivy/history/latest-milestone/install.html). Make sure to use the instructions in the "Manually" section.
+3. Compile with `ant jar`.

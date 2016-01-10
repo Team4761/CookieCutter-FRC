@@ -11,6 +11,8 @@
 		<delete dir="build" />
 		<delete dir="dist" />
 	</target>
+	<target name="compile" description="Compile source code" depends="resolve-ivy-deps,athena-project-build.compile">
+	</target>
 
 	<!-- From WPILib -->
 	<property file="${user.home}/wpilib/wpilib.properties"/>

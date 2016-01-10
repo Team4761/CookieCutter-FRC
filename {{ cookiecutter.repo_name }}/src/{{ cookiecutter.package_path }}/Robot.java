@@ -1,12 +1,11 @@
-
-package org.robockets.cookiecutter;
+package {{ cookiecutter.package_name }};
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import org.robockets.cookiecutter.commands.ExampleCommand;
-import org.robockets.cookiecutter.subsystems.ExampleSubsystem;
+import {{ cookiecutter.package_name }}.commands.ExampleCommand;
+import {{ cookiecutter.package_name }}.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 

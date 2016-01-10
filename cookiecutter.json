@@ -1,0 +1,7 @@
+{
+	"project_name": "java-cmdbased-robot",
+	"repo_name": "{{ cookiecutter.project_name | replace(' ', '-') }}",
+	"team_number": "4761",
+	"package_name": "org.usfirst.frc.team{{ cookiecutter.team_number}}.robot",
+	"package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
+}
