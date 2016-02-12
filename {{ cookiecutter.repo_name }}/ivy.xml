@@ -1,5 +1,5 @@
 <ivy-module version="2.0">
-    <info organisation="org.robockets" module="cookiecutter"/>
+    <info organisation="{{ cookiecutter.package_name  }}" module="{{ cookiecutter.repo_name }}"/>
     <dependencies>
 <!--
         <dependency org="junit" name="junit" rev="4.12"/>

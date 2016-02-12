@@ -1,5 +1,4 @@
-
-package org.robockets.cookiecutter.subsystems;
+package {{ cookiecutter.package_name }}.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 

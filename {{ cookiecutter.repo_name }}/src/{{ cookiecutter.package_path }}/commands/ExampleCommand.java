@@ -1,9 +1,8 @@
-
-package org.robockets.cookiecutter.commands;
+package {{ cookiecutter.package_name }}.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-import org.robockets.cookiecutter.Robot;
+import {{ cookiecutter.package_name }}.Robot;
 
 /**
  *
