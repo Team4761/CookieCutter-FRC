@@ -4,7 +4,7 @@ Cookiecutter project for Command-Based Java FRC robot projects with Ivy.
 ## Fancy Features
 * Dependency management with [Apache Ivy](https://ant.apache.org/ivy/).
 * Easy [Travis CI](https://travis-ci.org/) integration out-of-the-box.
-* Set up for unit testing with [JUnit](http://junit.org/) and [Mockito](http://mockito.org/) out-of-the-box.
+* ~~Set up for unit testing with [JUnit](http://junit.org/) and [Mockito](http://mockito.org/) out-of-the-box.~~
 * Support for Team 4761's [ButtonManager](https://github.com/Team4761/ButtonManager) and [DistanceSensorLib](https://github.com/Team4761/DistanceSensorLib) built in.
 * .gitignore file based of the one from the [Open-RIO project](https://github.com/Open-RIO/.gitignore).
 * "Clean" task for the Ant build file for quickly and easily removing binaries.
